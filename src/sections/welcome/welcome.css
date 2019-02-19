@@ -1,11 +1,14 @@
 .welcome{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    margin-top: 10vh;
+   
    background: url('./assets/img/back.jpg');
-   background-position: center top; 
-   /*font-family: 'Rouge Script', cursive;*/
+   background-size: cover;
+   background-position:center;
+ 
+ background-repeat: no-repeat;
    padding: 30rem 0 30rem 0;
+ 
 }
 
 .welcome-text{
@@ -35,4 +38,8 @@
     text-align: left;
     padding-left: 5rem;
 
+}
+
+.bg{
+    height: 100vh;
 }

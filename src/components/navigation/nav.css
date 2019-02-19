@@ -1,0 +1,22 @@
+.nav{
+    height: 8vh;
+    width: 100%;
+    background: #fff; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    transition: all linear .3s;
+}
+
+.nav ul{
+    font-family: 'Marcellus', serif;
+    list-style: none;
+ font-size: 1.4rem;
+ display:flex;
+ 
+ text-transform: uppercase;
+}
+.nav ul li{
+ margin: 4rem;
+}
