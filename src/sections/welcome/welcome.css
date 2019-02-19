@@ -1,0 +1,38 @@
+.welcome{
+    height: 90vh;
+    width: 100%;
+    margin-top: 10vh;
+   background: url(../../Assets/img/back.jpg);
+   background-position: center top; 
+   /*font-family: 'Rouge Script', cursive;*/
+   padding: 30rem 0 30rem 0;
+}
+
+.welcome-text{
+  font-family: 'Rouge Script', cursive;
+  color: white;
+  font-size:3.8rem;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.welcome h1{
+    color: white;
+    font-family: 'Marcellus', serif;
+    word-spacing: -2px;
+    text-align: left;
+    padding-left: 4rem;
+    font-size: 7.5rem;
+    font-weight: lighter;
+}
+
+.welcome-paragraph{
+    font-family: 'Marcellus', serif;
+    color: white;
+    font-size:2rem;
+    width: 40ch;
+    line-height: 3.5rem;
+    text-align: left;
+    padding-left: 5rem;
+
+}
