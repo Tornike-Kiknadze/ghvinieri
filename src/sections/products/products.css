@@ -1,6 +1,7 @@
 .products{
     height: 90vh;
     width: 100%;
+    padding: 0 2rem;
  
  
 }
@@ -57,4 +58,34 @@
     width: 73px;
     height: 4px;
     background: url('./assets/img/glass.png');
+}
+.product-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.products-item{
+    width:25%;
+    height: auto;
+   background-color: #fff;
+    padding:4rem;
+    margin: .5rem;
+    transition: all ease  1s;
+    border: 1px solid transparent;
+}
+.products-item:hover{
+ 
+  box-shadow:1px 7px 15px rgba(0, 0, 0, 0.589);
+ 
+}
+.product-name{
+    font-family: 'Marcellus', serif;
+    word-spacing: -2px;
+    text-align: center;
+ 
+    font-size: 2rem;
+    font-weight: lighter;
+
+    text-align: center;
+ 
 }
