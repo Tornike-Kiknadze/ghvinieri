@@ -2,7 +2,7 @@
     height: 90vh;
     width: 100%;
     margin-top: 10vh;
-   background: url(../../Assets/img/back.jpg);
+   background: url('./assets/img/back.jpg');
    background-position: center top; 
    /*font-family: 'Rouge Script', cursive;*/
    padding: 30rem 0 30rem 0;
