@@ -1,0 +1,8 @@
+.news{
+    height: 80vh;
+    width:100%;
+  background: url('./assets/img/bg.jpg');
+ background-size: cover;
+background-attachment: fixed;
+background-position: center center;
+}

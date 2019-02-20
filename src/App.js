@@ -6,6 +6,8 @@ import About from './sections/about/about';
 import Products from './sections/products/producs';
 import Nav from './components/navigation/nav';
 import Special from './sections/special/special';
+import News from './sections/news/news';
+import Footer from './sections/footer/footer';
 
 class App extends Component {
   render() {
@@ -16,6 +18,8 @@ class App extends Component {
         <About />
         <Products />
         <Special/>
+        <News/>
+      <Footer/>
       </div>
     );
   }

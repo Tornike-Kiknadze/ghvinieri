@@ -1,0 +1,25 @@
+.footer{
+    height: 40vh;
+    width:100%;
+    
+  background: url(../special/assets/img/footer.jpg);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+ 
+ 
+ 
+ 
+.footer-contact svg:hover{
+ cursor: pointer;
+ fill:#a10215;
+}
+.footer-contact svg{
+margin:1rem;
+}
+.footer-contact {
+  margin-top: 4rem;
+}
+ 
