@@ -12,7 +12,7 @@ const Header = (props)=> {
             <React.Fragment> 
                 <p className={'products-header ' + (props.styleHeader)}>{header}</p>
                 <p className={'products-title ' + (props.styleTitle)} >{title}</p>
-                <div className='products-image'><img src={require('./assets/img/glasses.png')}></img></div>
+                <div className='products-image'><img alt='' src={require('./assets/img/glasses.png')}></img></div>
 
                 </React.Fragment>
           

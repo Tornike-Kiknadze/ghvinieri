@@ -18,6 +18,7 @@
 }
 .footer-contact svg{
 margin:1rem;
+transition: all ease-in-out .3s;
 }
 .footer-contact {
   margin-top: 4rem;

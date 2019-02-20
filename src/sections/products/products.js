@@ -9,11 +9,11 @@ class Products extends Component {
         wines: [
 
 
-            { name: "ragaca", img: require("./assets/img/bottle.png") },
-            { name: "sxva", img: require("./assets/img/bottle1.png") },
+            {key:'1', name: "ragaca", img: require("./assets/img/bottle.png") },
+            {key:'2', name: "sxva", img: require("./assets/img/bottle1.png") },
 
-            { name: "ragaca", img: require("./assets/img/bottle.png") },
-            { name: "sxva", img: require("./assets/img/bottle1.png") }
+            {key:'3', name: "ragaca", img: require("./assets/img/bottle.png") },
+            {key:'4', name: "sxva", img: require("./assets/img/bottle1.png") }
 
 
 
@@ -28,8 +28,8 @@ class Products extends Component {
                 <Header header='Our Products' title='Popular This Month'/>
                 <div className='product-wrapper'>
                     {this.state.wines.map(wine => (
-                        <div className="products-item">
-                            <img src={wine.img}></img>
+                        <div  key={wine.key}  className="products-item">
+                            <img alt='' src={wine.img}></img>
 
                             <p className="product-name">
                                 {wine.name}

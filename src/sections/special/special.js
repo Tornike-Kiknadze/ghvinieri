@@ -18,9 +18,9 @@ class Special extends Component {
             <section className='special'>
     
                 <Header header='Our Products' title='Deal Of The Week'/>
-                <div class="special-content">
+                <div className="special-content">
                 <div className="special-left">
-                <img src={require("./assets/img/special.png")}></img>
+                <img alt='' src={require("./assets/img/special.png")}></img>
                 </div>
                 <div className="special-right">
                 <h2>Special wine</h2>

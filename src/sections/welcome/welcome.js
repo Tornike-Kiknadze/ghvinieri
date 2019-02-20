@@ -15,7 +15,7 @@ class Welcome extends Component {
 
         })
 
-
+          
     }
 
 
@@ -35,7 +35,7 @@ class Welcome extends Component {
                  used in the graphic, print, and publishing industries for previewing
                   layouts and visual mockups.</p>
 
-                 <button className='button' ><a href="#">read more</a></button>
+                 <button className='button' ref='hello'><a href="#about">read more</a></button>
             </section>
 
         );
