@@ -5,6 +5,7 @@ import Welcome from './sections/welcome/welcome';
 import About from './sections/about/about';
 import Products from './sections/products/producs';
 import Nav from './components/navigation/nav';
+import Special from './sections/special/special';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Welcome />
         <About />
         <Products />
+        <Special/>
       </div>
     );
   }

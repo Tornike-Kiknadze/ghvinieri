@@ -40,6 +40,58 @@
 
 }
 
-.bg{
-    height: 100vh;
+
+.button{
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #C02323;
+  position: absolute;
+  left: 5rem;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'Marcellus', serif;
+  overflow: hidden;
+}
+
+.button::before, .button::after{
+  content: "";
+ 
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: rgb(192, 35, 35);
+}
+
+.button:after{
+  left: 100%;
+}
+
+.button:hover::before{
+  left: 0;
+}
+
+.button:hover::after{
+  left: 50%;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem 5rem;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.button a:active{
+ 
+  color: rgb(100, 6, 6);
+  transition: all ease-in-out .2s;
 }

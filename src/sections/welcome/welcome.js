@@ -31,9 +31,11 @@ class Welcome extends Component {
 
                 <p className='welcome-text'>Welcome to Ghvinieri</p>
                 <h1>Best Of Wine Store</h1>
-                <p className='welcome-paragraph'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <p className='welcome-paragraph'>Lorem ipsum is placeholder text commonly
+                 used in the graphic, print, and publishing industries for previewing
+                  layouts and visual mockups.</p>
 
-
+                 <button className='button' ><a href="#">read more</a></button>
             </section>
 
         );

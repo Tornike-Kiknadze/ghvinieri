@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './products.css';
+import Header from '../../components/sectionheader/header';
 
 class Products extends Component {
 
@@ -24,10 +25,7 @@ class Products extends Component {
     render() {
         return (
             <section className="products">
-                <p className='products-header'>Our Products</p>
-                <p className='products-title'>Popular This Month</p>
-                <div className='products-image'><img src={require('./assets/img/glasses.png')}></img></div>
-
+                <Header header='Our Products' title='Popular This Month'/>
                 <div className='product-wrapper'>
                     {this.state.wines.map(wine => (
                         <div className="products-item">
