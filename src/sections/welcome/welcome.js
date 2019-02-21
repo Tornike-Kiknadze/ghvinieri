@@ -3,9 +3,7 @@ import React, { Component } from "react";
 import "./welcome.css";
 
 class Welcome extends Component {
-  constructor(props) {
-    super(props);
-  }
+ 
   componentDidMount() {
     const parallax = this.refs.parallax;
     window.addEventListener("scroll", function() {
@@ -17,11 +15,15 @@ class Welcome extends Component {
   scrollToRef = () => {
     window.scrollTo({
       top: this.props.scrollToElement.current.offsetTop,
-     
       behavior: "smooth"
     });
-  };
+     
+  };  
+
   render() {
+
+
+    
     return (
       <section className="welcome" ref="parallax">
         <p className="welcome-text">Welcome to Ghvinieri</p>

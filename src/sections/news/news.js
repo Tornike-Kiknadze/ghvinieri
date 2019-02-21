@@ -9,13 +9,13 @@ class News extends Component {
 
 
     render() {
-
+    
 
         return (
 
 
 
-            <section className='news'>
+            <section className='news' ref={this.props.reference}>
                <Header header='News' title="don't miss anything" styleHeader='white' styleTitle='white'/>
              
             </section>

@@ -4,6 +4,7 @@ import "./about.css";
 
 class About extends Component {
   render() {
+     
     return (
       <section className="about" ref={this.props.referance}>
         <div className="about-left">

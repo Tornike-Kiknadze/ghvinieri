@@ -15,7 +15,7 @@ class Special extends Component {
 
 
 
-            <section className='special'>
+            <section className='special' ref={this.props.reference}>
     
                 <Header header='Our Products' title='Deal Of The Week'/>
                 <div className="special-content">

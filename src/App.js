@@ -12,20 +12,30 @@ import Footer from "./sections/footer/footer";
 class App extends Component {
   constructor(props) {
     super(props);
+ 
     this.state = {
-      scrollToElement: React.createRef()
-    };
+      about: React.createRef(),
+      products: React.createRef(),
+      special: React.createRef(),
+      news: React.createRef()
+      
+ 
+    }
+     
   }
 
   render() {
+   const {about,products,special,news} =this.state;
+  
+
     return (
       <div className="App">
-        <Nav />
-        <Welcome scrollToElement={this.state.scrollToElement} />
-        <About referance={this.state.scrollToElement} />
-        <Products />
-        <Special />
-        <News />
+        <Nav products={products} about={about} offers={special} news={news}/>
+        <Welcome scrollToElement={about} />
+        <About referance={about} />
+        <Products  reference={products}  />
+        <Special  reference={special} />
+        <News  reference={news} />
         <Footer />
       </div>
     );

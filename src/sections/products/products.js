@@ -23,8 +23,9 @@ class Products extends Component {
 
 
     render() {
+         
         return (
-            <section className="products">
+            <section className="products" ref={this.props.reference}>
                 <Header header='Our Products' title='Popular This Month'/>
                 <div className='product-wrapper'>
                     {this.state.wines.map(wine => (
