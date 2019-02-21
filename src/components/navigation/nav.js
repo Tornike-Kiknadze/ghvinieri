@@ -26,13 +26,13 @@ class Nav extends Component {
     }
 
  handleClick=(e)=>{
-    let section=(e.target.innerHTML);
-     let rame =this.props[section].current.offsetTop;
-     console.log(rame);
+     let section=(e.target.innerHTML);
+     let scrollto =this.props[section].current.offsetTop;
+    
  
-  var obj ={}
+ 
     window.scrollTo({
-        top: rame,
+        top: scrollto,
         behavior: "smooth"
       });
        
