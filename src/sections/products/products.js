@@ -9,11 +9,11 @@ class Products extends Component {
         wines: [
 
 
-            {key:'1', name: "ragaca", img: require("./assets/img/bottle.png") },
-            {key:'2', name: "sxva", img: require("./assets/img/bottle1.png") },
+            { key: '1', name: "1", img: require("./assets/img/bottle.png") },
+            { key: '2', name: "2", img: require("./assets/img/bottle1.png") },
 
-            {key:'3', name: "ragaca", img: require("./assets/img/bottle.png") },
-            {key:'4', name: "sxva", img: require("./assets/img/bottle1.png") }
+            { key: '3', name: "3", img: require("./assets/img/bottle.png") },
+            { key: '4', name: "4", img: require("./assets/img/bottle1.png") }
 
 
 
@@ -23,13 +23,13 @@ class Products extends Component {
 
 
     render() {
-         
+
         return (
             <section className="products" ref={this.props.reference}>
-                <Header header='Our Products' title='Popular This Month'/>
+                <Header header='Our Products' title='Popular This Month' />
                 <div className='product-wrapper'>
                     {this.state.wines.map(wine => (
-                        <div  key={wine.key}  className="products-item">
+                        <div key={wine.key} className="products-item">
                             <img alt='' src={wine.img}></img>
 
                             <p className="product-name">
