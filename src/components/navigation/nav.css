@@ -19,4 +19,14 @@
 }
 .nav ul li{
  margin: 4rem;
+ cursor: pointer;
+ transition: all ease-in-out .2s;
 }
+.nav ul li:hover{
+ margin: 4rem;
+ cursor: pointer;
+ color: #C02323;
+ transform: translateY(-1px);
+}
+
+ 
