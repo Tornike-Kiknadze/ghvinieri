@@ -17,7 +17,7 @@ class Welcome extends Component {
   scrollToRef = () => {
     window.scrollTo({
       top: this.props.scrollToElement.current.offsetTop,
-      left: 100,
+     
       behavior: "smooth"
     });
   };
