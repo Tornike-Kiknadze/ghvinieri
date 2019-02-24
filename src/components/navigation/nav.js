@@ -28,9 +28,6 @@ class Nav extends Component {
  handleClick=(e)=>{
      let section=(e.target.innerHTML);
      let scrollto =this.props[section].current.offsetTop;
-    
- 
- 
     window.scrollTo({
         top: scrollto,
         behavior: "smooth"

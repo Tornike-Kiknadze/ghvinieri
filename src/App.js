@@ -8,6 +8,7 @@ import Nav from "./components/navigation/nav";
 import Special from "./sections/special/special";
 import News from "./sections/news/news";
 import Footer from "./sections/footer/footer";
+import Upbutton from "./components/upbutton/upbutton";
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
 
     return (
       <div className="App">
+      <Upbutton/>
         <Nav products={products} about={about} offers={special} news={news}/>
         <Welcome scrollToElement={about} />
         <About referance={about} />

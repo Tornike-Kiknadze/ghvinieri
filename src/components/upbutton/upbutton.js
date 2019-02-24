@@ -1,0 +1,48 @@
+import React, { Component } from "react";
+
+import "./upbutton.css";
+ 
+
+class Upbutton extends Component {
+
+         
+      
+    componentDidMount() { 
+           
+        const button =this.refs.button;
+        window.addEventListener("scroll", function () {
+        let offset = window.pageYOffset;
+
+        if (offset >= 735) {
+            button.style.opacity = '1';
+
+        } else { button.style.opacity = '0' };
+    })}
+
+ 
+ 
+
+   handleUp=()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+       
+   }
+ 
+       
+
+ 
+  render() {
+     
+
+ 
+
+
+    return (
+    <div onClick={this.handleUp} ref='button' className='upbutton'><img src={require('./assets/up.png')}></img></div>
+    );
+  }
+}
+
+export default Upbutton;
