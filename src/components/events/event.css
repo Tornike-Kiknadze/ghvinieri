@@ -1,0 +1,36 @@
+.event {
+    width:300px;
+    height: 450px;
+    background-color:rgba(255, 255, 255, 0.021);
+   transition: all ease-in-out .4s;
+    display:flex;
+    justify-content: center;
+    padding-top: 6rem;
+    border-radius: 2px;
+    float:left;
+    margin: 1rem;
+}
+.event:hover {
+ background-color: rgb(0, 0, 0);
+}
+ 
+
+.date-wrapper{
+    width: 45%;
+    height:30%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.date-wrapper span {
+font-size: 4rem;
+font-family: 'Marcellus', serif;
+color: #CB3723;
+}
+.date-wrapper p{
+font-size: 1.5rem;
+font-family: 'Marcellus', serif;
+ 
+}
