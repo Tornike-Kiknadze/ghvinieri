@@ -40,7 +40,7 @@ class Upbutton extends Component {
 
 
     return (
-    <div onClick={this.handleUp} ref='button' className='upbutton'><img src={require('./assets/up.png')}></img></div>
+    <div style={{opacity:0}} onClick={this.handleUp} ref='button' className='upbutton'><img src={require('./assets/up.png')}></img></div>
     );
   }
 }
