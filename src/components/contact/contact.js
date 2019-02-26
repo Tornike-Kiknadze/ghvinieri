@@ -54,16 +54,16 @@ class Contact extends Component {
                   <br />
                   Sunday: Close
                 </p>
-              </div> 
-            </div>  
-        
+              </div>
+            </div>
           </div>
-           <div className="contact-us">
-        
-
-           	<Header header='Contact Us' title='Get in touch' />
-        <Form/>   
-           </div>
+          <div className="contact-us">
+            <div className="image-container">
+           a
+            </div>
+            <Header header="Contact Us" title="Get in touch" />
+            <Form />
+          </div>
         </div>
         <Footer />
       </React.Fragment>
