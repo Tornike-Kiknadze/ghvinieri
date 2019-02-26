@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   width: auto;
+  animation-name:opacity;
+  animation-duration: .3s;
+  animation-timing-function: linear;
 }
+ 
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
