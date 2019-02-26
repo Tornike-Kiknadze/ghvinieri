@@ -6,6 +6,7 @@ import Phone from "../../assets/svg/phone";
 import Location from "../../assets/svg/address";
 import Clock from "../../assets/svg/workinghours";
 import Header from "../sectionheader/header";
+import Form from "../contactform/form";
 
 class Contact extends Component {
   constructor(props) {
@@ -61,7 +62,7 @@ class Contact extends Component {
         
 
            	<Header header='Contact Us' title='Get in touch' />
-        
+        <Form/>   
            </div>
         </div>
         <Footer />
