@@ -5,13 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
-import Plain from './components/plain/plain';
+import Contact from './components/contact/contact';
+ 
 
 const routing = (
     <Router>
         <div>
             <Route exact path="/" component={App} />
-            <Route path="/2" component={Plain} />
+            <Route  path="/contact" component={Contact} />
+            
 
 
         </div>

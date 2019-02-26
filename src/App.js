@@ -7,8 +7,9 @@ import Products from "./sections/products/products";
 import Nav from "./components/navigation/nav";
 import Special from "./sections/special/special";
 import News from "./sections/news/news";
-import Footer from "./sections/footer/footer";
+ 
 import Upbutton from "./components/upbutton/upbutton";
+import Footer from "./components/footer/footer";
 
 
 
@@ -42,7 +43,7 @@ class App extends Component {
         <Products reference={products} />
         <Special reference={special} />
         <News reference={news} />
-        <Footer />
+<Footer/>
       </div>
     );
   }

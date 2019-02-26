@@ -9,12 +9,12 @@ const Header = (props)=> {
 
  
         return (
-            <React.Fragment> 
+            <div className='header-wrapper'> 
                 <p className={'products-header ' + (props.styleHeader)}>{header}</p>
                 <p className={'products-title ' + (props.styleTitle)} >{title}</p>
                 <div className='products-image'><img alt='' src={require('./assets/img/glasses.png')}></img></div>
 
-                </React.Fragment>
+                </div>
           
         );
     }
