@@ -29,7 +29,7 @@
   padding-top: 6rem;
   border-radius: 2px;
   float: left;
-  margin: 1rem;
+  margin: 2rem;
 }
 .event:hover {
   background-color: #0f0807;
@@ -39,7 +39,7 @@
   text-decoration: none;
   font-size: 3rem;
   font-family: "Marcellus", serif;
-  margin-top: 2rem;
+  margin: 2rem;
   transition: all ease-in-out 0.2s;
 }
 .event:hover a {
@@ -55,7 +55,7 @@
 }
 
 .date-wrapper {
-  width: 45%;
+  width: 35%;
   height: 30%;
   background-color: #fff;
   display: flex;

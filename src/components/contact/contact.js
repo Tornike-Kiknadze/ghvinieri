@@ -58,9 +58,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="contact-us">
-            <div className="image-container">
-           a
-            </div>
+            <div className="image-container">a</div>
             <Header header="Contact Us" title="Get in touch" />
             <Form />
           </div>

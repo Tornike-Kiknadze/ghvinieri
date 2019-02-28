@@ -1,0 +1,39 @@
+.newspage {
+  min-height: 100vh;
+  width: 100%;
+  animation-name: opacity;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+.newspage-content {
+  width: 100%;
+  height: 100%;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.newspage-content h2 {
+  margin: 2rem;
+}
+.newspage-content p {
+  margin: 2rem;
+}
+
+.newspage-header {
+  width: 100%;
+  height: 10vh;
+  background-color: #f2f4f5;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.newspage-header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(145, 141, 141);
+  font-family: "Marcellus", serif;
+  transition: all ease-in-out 0.3s;
+}

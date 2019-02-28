@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./NewsPage.css";
+import { Link } from "react-router-dom";
 class NewsPage extends Component {
   constructor(props) {
     super(props);
@@ -18,14 +20,21 @@ class NewsPage extends Component {
 
     console.log(currentItem);
     return (
-      <div>
-        <h2 style={{ color: "red" }}>{currentItem.month}</h2>
-
-        {news
-          .filter(item => item.id !== currentItem.id)
-          .map(news => (
-            <h1>{news.id}</h1>
-          ))}
+      <div className="newspage">
+        <div className="newspage-header">
+          <div className="newspage-header-links">
+            <Link to="/">Home</Link>
+          </div>
+        </div>
+        <div class="newspage-content">
+          <h2 style={{ color: "red" }}>{currentItem.name}</h2>
+          <p>{currentItem.text}</p>
+          {news
+            .filter(item => item.id !== currentItem.id)
+            .map(news => (
+              <h1>{news.id}</h1>
+            ))}
+        </div>
       </div>
     );
   }
