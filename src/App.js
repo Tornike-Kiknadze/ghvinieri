@@ -22,10 +22,7 @@ class App extends Component {
       products: React.createRef(),
       special: React.createRef(),
       news: React.createRef()
-
-
     }
-
   }
 
   render() {
@@ -35,7 +32,6 @@ class App extends Component {
     return (
 
       <div className="App">
-
         <Upbutton />
         <Nav products={products} about={about} offers={special} news={news} />
         <Welcome scrollToElement={about} />
