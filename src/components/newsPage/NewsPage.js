@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./NewsPage.css";
 import { Link } from "react-router-dom";
+import Arrow from "../../assets/svg/arrow";
 class NewsPage extends Component {
   constructor(props) {
     super(props);
@@ -18,12 +19,18 @@ class NewsPage extends Component {
   render() {
     const { news, currentItem } = this.state;
 
-    console.log(currentItem);
+    console.log(this.props);
     return (
       <div className="newspage">
         <div className="newspage-header">
           <div className="newspage-header-links">
-            <Link to="/">Home</Link>
+            <Link to="/">
+              {" "}
+              <Arrow width={50} height={20} />
+              Home
+            </Link>
+
+            <h3>News</h3>
           </div>
         </div>
         <div class="newspage-content">

@@ -25,15 +25,44 @@
   width: 100%;
   height: 10vh;
   background-color: #f2f4f5;
-  display: flex;
-  align-items: center;
-  padding: 0 4rem;
-}
 
+  padding: 0 4rem;
+
+  justify-content: space-around;
+}
+.newspage-header-links {
+  display: flex;
+
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
 .newspage-header a {
   text-decoration: none;
   font-size: 2rem;
+  margin: -2rem;
   color: rgb(145, 141, 141);
   font-family: "Marcellus", serif;
   transition: all ease-in-out 0.3s;
+}
+.newspage-header a:hover {
+  color: #cb3723;
+}
+
+.newspage-header-links h3 {
+  font-family: "Marcellus", serif;
+  font-size: 2rem;
+}
+.newspage-header-links a {
+  display: flex;
+
+  align-items: center;
+}
+.newspage-header-links a svg {
+  fill: rgb(145, 141, 141);
+  margin: -1rem;
+  transition: all ease-in-out 0.3s;
+}
+.newspage-header-links a:hover svg {
+  fill: #cb3723;
 }
