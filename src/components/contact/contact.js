@@ -7,6 +7,8 @@ import Location from "../../assets/svg/address";
 import Clock from "../../assets/svg/workinghours";
 import Header from "../sectionheader/header";
 import Form from "../contactform/form";
+import HomeButton from "../homebutton/homebutton";
+import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
   constructor(props) {
@@ -19,9 +21,8 @@ class Contact extends Component {
       <React.Fragment>
         <div className="contact">
           <div className="contact-header">
-            <div className="contact-header-links">
-              <Link to="/">Home</Link>
-            </div>
+            <HomeButton />
+            <h3>Contact</h3>
           </div>
           <div className="contact-content">
             <div className="contact-content-links">
@@ -63,6 +64,7 @@ class Contact extends Component {
             <Form />
           </div>
         </div>
+        <Upbutton />
         <Footer />
       </React.Fragment>
     );

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "./NewsPage.css";
+import HomeButton from "../homebutton/homebutton";
+import Header from "../sectionheader/header";
 import { Link } from "react-router-dom";
-import Arrow from "../../assets/svg/arrow";
+
+
 class NewsPage extends Component {
   constructor(props) {
     super(props);
@@ -24,23 +27,30 @@ class NewsPage extends Component {
       <div className="newspage">
         <div className="newspage-header">
           <div className="newspage-header-links">
-            <Link to="/">
-              {" "}
-              <Arrow width={50} height={20} />
-              Home
-            </Link>
+            <HomeButton />
 
             <h3>News</h3>
           </div>
         </div>
         <div class="newspage-content">
-          <h2 style={{ color: "red" }}>{currentItem.name}</h2>
-          <p>{currentItem.text}</p>
-          {news
-            .filter(item => item.id !== currentItem.id)
-            .map(news => (
-              <h1>{news.id}</h1>
-            ))}
+          <Header header="News"
+            title={currentItem.name}
+            styleHeader="black"
+            styleTitle="black" />
+          <br />   <br />
+          <p >{currentItem.text}</p>
+          <div className='other-news'>
+            {news
+              .filter(item => item.id !== currentItem.id)
+              .map(news => (
+                <div class="other-news-wrapper">
+                  <div className='news-wrapper'> <span> {news.date}</span> <p>{news.month}</p></div>
+
+                  <div class="other-news-paragraph">
+                    {news.name}
+                  </div>
+                </div>
+              ))}</div>
         </div>
       </div>
     );

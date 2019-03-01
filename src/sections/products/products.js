@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 import './products.css';
+import uuidv1 from "uuid/v1";
 import Header from '../../components/sectionheader/header';
 
 class Products extends Component {
@@ -9,11 +10,11 @@ class Products extends Component {
         wines: [
 
 
-            { key: '1', name: "1", img: require("./assets/img/bottle.png") },
-            { key: '2', name: "2", img: require("./assets/img/bottle1.png") },
+            { id: uuidv1(), name: "1", img: require("./assets/img/bottle.png") },
+            { id: uuidv1(), name: "2", img: require("./assets/img/bottle1.png") },
 
-            { key: '3', name: "3", img: require("./assets/img/bottle.png") },
-            { key: '4', name: "4", img: require("./assets/img/bottle1.png") }
+            { id: uuidv1(), name: "3", img: require("./assets/img/bottle.png") },
+            { id: uuidv1(), name: "4", img: require("./assets/img/bottle1.png") }
 
 
 
@@ -24,6 +25,7 @@ class Products extends Component {
 
     render() {
 
+        const { wines } = this.state;
         return (
             <section className="products" ref={this.props.reference}>
                 <Header header='Our Products' title='Popular This Month' />
@@ -37,6 +39,17 @@ class Products extends Component {
                             </p></div>))}
 
                 </div>
+
+                <Link
+                    to={{
+                        pathname: `productpage`,
+                        state: wines
+
+                    }}
+                >
+                    <button className="product-button"><span>VIEW MORE</span></button>
+                </Link>
+
             </section>
         );
     }
