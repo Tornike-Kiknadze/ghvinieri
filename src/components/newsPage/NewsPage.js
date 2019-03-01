@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./NewsPage.css";
 import HomeButton from "../homebutton/homebutton";
 import Header from "../sectionheader/header";
-import { Link } from "react-router-dom";
+
 
 
 class NewsPage extends Component {
@@ -14,11 +14,18 @@ class NewsPage extends Component {
     };
   }
   componentWillMount() {
+
     const news = this.props.location.state;
     const id = this.props.match.params.id;
     const currentItem = news.find(item => item.id === id);
     this.setState({ news, currentItem });
   }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+
   render() {
     const { news, currentItem } = this.state;
 

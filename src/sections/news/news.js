@@ -49,7 +49,7 @@ class News extends Component {
         />
         <div className="event-wrapper">
           {news.map(item => (
-            <div className="event">
+            <div key={item.id} className="event">
               <div className="date-wrapper">
                 <span> {item.date}</span> <p>{item.month}</p>
               </div>

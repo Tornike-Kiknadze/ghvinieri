@@ -1,0 +1,26 @@
+.productpage{
+    min-height: 100vh;
+    width: 100%;
+    animation-name: opacity;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    overflow: hidden;   
+}
+
+
+.product-content {
+ float:left;
+ padding: 10rem;
+   
+ 
+}
+.product-content p{
+    font-size: 2rem;
+    font-family: "Marcellus", serif;
+    margin-top: 2rem;
+  
+ 
+}
+.product-content img{
+    height:200px;   
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
+
 import "./contact.css";
 import Footer from "../footer/footer";
 import Phone from "../../assets/svg/phone";
@@ -11,11 +11,9 @@ import HomeButton from "../homebutton/homebutton";
 import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
-    const { events } = this.props;
+
 
     return (
       <React.Fragment>

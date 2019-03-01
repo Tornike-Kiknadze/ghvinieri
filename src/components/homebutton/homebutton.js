@@ -8,10 +8,9 @@ class HomeButton extends Component {
     render() {
 
 
-        console.log(this.props);
         return (
 
-            <div class="homebutton-header-links"><Link to="/">
+            <div className="homebutton-header-links"><Link to="/">
                 {" "}
                 <Arrow width={50} height={20} />
                 Home
