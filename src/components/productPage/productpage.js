@@ -33,12 +33,13 @@ class ProductPage extends Component {
                     </div>
                 </div>
 
-                {products.map(item =>
-                    <div key={item.name} className="product-content">
-                        <img src={item.img}></img>
-                        <p>{item.name}</p>
+                <div class="productpage-wrapper">
+                    {products.map(item =>
+                        <div key={item.name} className="productpage-content">
+                            <img src={item.img}></img>
+                            <p>{item.name}</p>
 
-                    </div>)}
+                        </div>)}</div>
 
             </div>
         );
