@@ -7,6 +7,7 @@ import Location from "../../assets/svg/address";
 import Clock from "../../assets/svg/workinghours";
 import Header from "../sectionheader/header";
 import Form from "../contactform/form";
+import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
   constructor(props) {
@@ -63,6 +64,7 @@ class Contact extends Component {
             <Form />
           </div>
         </div>
+        <Upbutton />
         <Footer />
       </React.Fragment>
     );
