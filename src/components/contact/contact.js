@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
+
 import "./contact.css";
 import Footer from "../footer/footer";
 import Phone from "../../assets/svg/phone";
@@ -7,22 +7,20 @@ import Location from "../../assets/svg/address";
 import Clock from "../../assets/svg/workinghours";
 import Header from "../sectionheader/header";
 import Form from "../contactform/form";
+import HomeButton from "../homebutton/homebutton";
 import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
-    const { events } = this.props;
+
 
     return (
       <React.Fragment>
         <div className="contact">
           <div className="contact-header">
-            <div className="contact-header-links">
-              <Link to="/">Home</Link>
-            </div>
+            <HomeButton />
+            <h3>Contact</h3>
           </div>
           <div className="contact-content">
             <div className="contact-content-links">

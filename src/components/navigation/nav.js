@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './nav.css';
 
 class Nav extends Component {
-     
+
     componentDidMount() {
-         
-      
+
+
         const nav = this.refs.nav;
         window.addEventListener("scroll", function () {
             let offset = window.pageYOffset;
@@ -25,20 +25,20 @@ class Nav extends Component {
 
     }
 
- handleClick=(e)=>{
-     let section=(e.target.innerHTML);
-     let scrollto =this.props[section].current.offsetTop;
-    window.scrollTo({
-        top: scrollto,
-        behavior: "smooth"
-      });
-       
- }
+    handleClick = (e) => {
+        let section = (e.target.innerHTML);
+        let scrollto = this.props[section].current.offsetTop;
+        window.scrollTo({
+            top: scrollto,
+            behavior: "smooth"
+        });
+
+    }
 
 
     render() {
-   
-     
+
+
         return (
 
 
@@ -47,12 +47,12 @@ class Nav extends Component {
                 <ul>
 
 
-                    <li onClick={(e)=>this.handleClick(e)}><Link to='/'>about</Link></li>
-                    <li onClick={(e)=>this.handleClick(e)}>products</li>
-                    <li onClick={(e)=>this.handleClick(e)}>offers</li>
-                    <li onClick={(e)=>this.handleClick(e)}>news</li>
+                    <li onClick={(e) => this.handleClick(e)}><Link to='/'>about</Link></li>
+                    <li onClick={(e) => this.handleClick(e)}>products</li>
+                    <li onClick={(e) => this.handleClick(e)}>offers</li>
+                    <li onClick={(e) => this.handleClick(e)}>news</li>
                     <li  >   <Link to='/contact'>contact</Link></li>
-                  
+
 
                 </ul>
 

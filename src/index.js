@@ -4,16 +4,18 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import NewsPage from "./components/newsPage/NewsPage";
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import Contact from "./components/contact/contact";
+import ProductPage from "./components/productPage/productpage";
 
 const routing = (
   <Router>
-    <div>
+    <Switch>
       <Route exact path="/" component={App} />
       <Route path="/contact" component={Contact} />
       <Route path="/newspage/:id" component={NewsPage} />
-    </div>
+      <Route path="/productpage" component={ProductPage} />
+    </Switch>
   </Router>
 );
 

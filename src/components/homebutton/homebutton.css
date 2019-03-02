@@ -1,0 +1,36 @@
+.homebutton-header-links {
+    display: flex;
+  
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homebutton-header-links a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: -2rem;
+    color: rgb(145, 141, 141);
+    font-family: "Marcellus", serif;
+    transition: all ease-in-out 0.3s;
+  }
+  .homebutton-header-links a:hover {
+    color: #cb3723;
+  }
+  
+  .homebutton-header-links h3 {
+    font-family: "Marcellus", serif;
+    font-size: 2rem;
+  }
+  .homebutton-header-links a {
+    display: flex;
+  
+    align-items: center;
+  }
+  .homebutton-header-links a svg {
+    fill: rgb(145, 141, 141);
+    margin: -1rem;
+    transition: all ease-in-out 0.3s;
+  }
+  .homebutton-header-links a:hover svg {
+    fill: #cb3723;
+  }
