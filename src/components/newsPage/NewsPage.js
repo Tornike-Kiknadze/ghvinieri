@@ -28,10 +28,6 @@ class NewsPage extends Component {
     window.scrollTo(0, 0);
   }
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     window.scrollTo(0, 0);
     console.log("state", this.state);

@@ -1,50 +1,54 @@
-.welcome{
-    height: 100vh;
-    width: 100%;
-   
-   background: url('./assets/img/back.jpg');
-   background-size: cover;
-   background-position:center;
- 
- background-repeat: no-repeat;
-   padding: 30rem 0 30rem 0;
- 
+.welcome {
+  height: 100vh;
+  width: 100%;
+
+  background: url("./assets/img/back.jpg");
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  padding: 30rem 0 30rem 0;
 }
 
-.welcome-text{
-  font-family: 'Rouge Script', cursive;
+@media only screen and (max-height: 850px) {
+  .welcome {
+    height: 120vh;
+    padding: 20rem 0 20rem 0;
+  }
+}
+
+.welcome-text {
+  font-family: "Rouge Script", cursive;
   color: white;
-  font-size:3.8rem;
+  font-size: 3.8rem;
   text-align: left;
   padding-left: 5rem;
 }
 
-.welcome h1{
-    color: white;
-    font-family: 'Marcellus', serif;
-    word-spacing: -2px;
-    text-align: left;
-    padding-left: 4rem;
-    font-size: 7.5rem;
-    font-weight: lighter;
+.welcome h1 {
+  color: white;
+  font-family: "Marcellus", serif;
+  word-spacing: -2px;
+  text-align: left;
+  padding-left: 4rem;
+  font-size: 7.5rem;
+  font-weight: lighter;
 }
 
-.welcome-paragraph{
-    font-family: 'Marcellus', serif;
-    color: white;
-    font-size:2rem;
-    width: 40ch;
-    line-height: 3.5rem;
-    text-align: left;
-    padding-left: 5rem;
-
+.welcome-paragraph {
+  font-family: "Marcellus", serif;
+  color: white;
+  font-size: 2rem;
+  width: 40ch;
+  line-height: 3.5rem;
+  text-align: left;
+  padding-left: 5rem;
 }
 
-
-.button{
+.button {
   text-decoration: none;
   background: transparent;
-  border: 1px solid #C02323;
+  border: 1px solid #c02323;
   position: absolute;
   left: 5rem;
   color: #fff;
@@ -52,29 +56,30 @@
   margin-top: 5rem;
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-family: 'Marcellus', serif;
+  font-family: "Marcellus", serif;
   overflow: hidden;
-  width:15rem;
-  height:6rem;
+  width: 15rem;
+  height: 6rem;
   cursor: pointer;
   outline: none;
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }
 
-.button:active{
+.button:active {
   color: rgb(46, 21, 21);
 }
- .button p{
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top:50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   padding: 2rem;
-   z-index: 1;
- }
-.button::before, .button::after{
+.button p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  z-index: 1;
+}
+.button::before,
+.button::after {
   content: "";
   position: absolute;
   width: 50%;
@@ -88,29 +93,27 @@
   z-index: 0;
 }
 
-.button:after{
+.button:after {
   left: 100%;
 }
 
-.button:hover::before{
+.button:hover::before {
   left: 0;
 }
 
-.button:hover::after{
+.button:hover::after {
   left: 50%;
 }
 
-.button a{
+.button a {
   text-decoration: none;
   color: white;
   padding: 1.5rem 5rem;
   display: block;
   position: relative;
   z-index: 1;
-  
 }
-.button a:active{
- 
+.button a:active {
   color: rgb(100, 6, 6);
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }

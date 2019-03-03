@@ -1,61 +1,60 @@
-.about{
-    height: 80vh;
-    display: flex;
-    width: 100%;
-    padding:11rem 4rem 2rem 4rem;
-    background-color: #F9FAFA;
+.about {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  padding: 11rem 4rem 2rem 4rem;
+  background-color: #f9fafa;
 }
-
-.about-left{
-    
-    height:80%;
-    width: 50%;
-}
-.about-right{
-    text-align: left;
-    height:80%;
-    width: 50%;
-    padding-left: 4rem
-}
-
-.about-text{
-    font-family: 'Rouge Script', cursive;
-    color: #C02323;
-    font-size:3.5rem;
-    text-align: left;
-    padding-left: 5rem;
+@media only screen and (max-height: 850px) {
+  .about {
+    height: 110vh;
   }
-
-  
-.about h2{
-    margin-bottom: 1.5rem;
-    font-family: 'Marcellus', serif;
-    word-spacing: -2px;
-    text-align: left;
-    padding-left: 5rem;
-    padding-top: 1.5rem;
-    font-size: 4rem;
-    font-weight: lighter;
+}
+.about-left {
+  height: 80%;
+  width: 50%;
+}
+.about-right {
+  text-align: left;
+  height: 80%;
+  width: 50%;
+  padding-left: 4rem;
 }
 
-.about-paragraph{
-    font-family: 'Marcellus', serif;
-    font-size:1.6rem;
-    width: 40ch;
-    line-height: 3rem;
-    text-align: left;
-    padding-left: 5rem;
-  
-
+.about-text {
+  font-family: "Rouge Script", cursive;
+  color: #c02323;
+  font-size: 3.5rem;
+  text-align: left;
+  padding-left: 5rem;
 }
 
-.gray{
-    font-family: 'Marcellus', serif;
-    color: #A7A7A7;
-    font-size: 1.6rem;
-    width: auto;
-    height: auto;
-    margin-left: 5rem;
-   margin-top: 2rem;
-    
+.about h2 {
+  margin-bottom: 1.5rem;
+  font-family: "Marcellus", serif;
+  word-spacing: -2px;
+  text-align: left;
+  padding-left: 5rem;
+  padding-top: 1.5rem;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.about-paragraph {
+  font-family: "Marcellus", serif;
+  font-size: 1.6rem;
+  width: 40ch;
+  line-height: 3rem;
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.gray {
+  font-family: "Marcellus", serif;
+  color: #a7a7a7;
+  font-size: 1.6rem;
+  width: auto;
+  height: auto;
+  margin-left: 5rem;
+  margin-top: 2rem;
 }

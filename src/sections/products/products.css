@@ -1,135 +1,134 @@
-.products{
-    height:105vh;
-    width: 100%;
-    padding: 0 2rem;
-  
+.products {
+  height: 105vh;
+  width: 100%;
+  padding: 0 2rem;
 }
-
- 
-
- .products-image{
-     width: auto;
-     height: auto;
-    /*  border:2px solid gainsboro; */
-     display: inline-block;
-     text-align: center;
-     padding: 2rem;
-     position: relative;
-  
- }
- 
- .products-image::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -65px;
-    width: 73px;
-    height: 4px;
-    background: url('./assets/img/glass.png');
-}
- .products-image::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -65px;
-    width: 73px;
-    height: 4px;
-    background: url('./assets/img/glass.png');
-}
-.product-wrapper{
-    display: flex;
-    justify-content: space-around;
-   
-}
-
-.products-item{
-    width:25%;
-    height: auto;
-   background-color: #fff;
-    padding:4rem;
-    margin: .5rem;
-    transition: all ease  1s;
-    border: 1px solid transparent;
-}
-.products-item:hover{
- 
-  box-shadow:1px 7px 15px rgba(0, 0, 0, 0.589);
- 
-}
-.product-name{
-    font-family: 'Marcellus', serif;
-    word-spacing: -2px;
-    text-align: center;
- 
-    font-size: 2rem;
-    font-weight: lighter;
-
-    text-align: center;
- 
-}
-
-.product-button{
-    align-self: center;
-    text-decoration: none;
-   background: transparent;
-    border: 1px solid #C02323;
-    color: #C02323;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-family: 'Marcellus', serif;
-    overflow: hidden;
-    width:20rem;
-    height:5rem;
-    cursor: pointer;
-    outline: none;
-    transition: all ease-in-out .2s;
-    position: relative;
-  
+@media only screen and (max-height: 850px) {
+  .products {
+    height: 130vh;
   }
+}
+.products-image {
+  width: auto;
+  height: auto;
+  /*  border:2px solid gainsboro; */
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
 
-  .product-button::before, .product-button::after{
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    background-color: rgb(192, 35, 35);
-    z-index: 0;
+.products-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -65px;
+  width: 73px;
+  height: 4px;
+  background: url("./assets/img/glass.png");
+}
+.products-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -65px;
+  width: 73px;
+  height: 4px;
+  background: url("./assets/img/glass.png");
+}
+.product-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products-item {
+  width: 25%;
+  height: auto;
+  background-color: #fff;
+  padding: 4rem;
+  margin: 0.5rem;
+  transition: all ease 1s;
+  border: 1px solid transparent;
+}
+@media only screen and (max-height: 850px) {
+  .products-item img {
+    height: 30rem;
   }
+}
+.products-item:hover {
+  box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.589);
+}
+.product-name {
+  font-family: "Marcellus", serif;
+  word-spacing: -2px;
+  text-align: center;
 
-  .product-button span{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 2rem;
-    z-index: 1;
-    transition: all ease-in-out .2s;
-  }
+  font-size: 2rem;
+  font-weight: lighter;
 
+  text-align: center;
+}
 
+.product-button {
+  align-self: center;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #c02323;
+  color: #c02323;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Marcellus", serif;
+  overflow: hidden;
+  width: 20rem;
+  height: 5rem;
+  cursor: pointer;
+  outline: none;
+  transition: all ease-in-out 0.2s;
+  position: relative;
+}
 
-.product-button:after{
+.product-button::before,
+.product-button::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: rgb(192, 35, 35);
+  z-index: 0;
+}
+
+.product-button span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  z-index: 1;
+  transition: all ease-in-out 0.2s;
+}
+
+.product-button:after {
   left: 100%;
 }
 
-.product-button:hover::before{
+.product-button:hover::before {
   left: 0;
 }
-.product-button:hover.product-button span{
- color:white;
+.product-button:hover.product-button span {
+  color: white;
 }
 
-.product-button:hover::after{
+.product-button:hover::after {
   left: 50%;
 }
