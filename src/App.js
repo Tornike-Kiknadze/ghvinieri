@@ -10,8 +10,7 @@ import News from "./sections/news/news";
 
 import Upbutton from "./components/upbutton/upbutton";
 import Footer from "./components/footer/footer";
-
-
+import BurgerMenu from "./components/burger-menu/burger";
 
 class App extends Component {
   constructor(props) {
@@ -22,18 +21,13 @@ class App extends Component {
       products: React.createRef(),
       special: React.createRef(),
       news: React.createRef()
-    }
+    };
   }
-
-
-
 
   render() {
     const { about, products, special, news } = this.state;
 
-
     return (
-
       <div className="App">
         <Upbutton />
         <Nav products={products} about={about} offers={special} news={news} />

@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import "./welcome.css";
 
 class Welcome extends Component {
- 
   componentDidMount() {
     const parallax = this.refs.parallax;
     window.addEventListener("scroll", function() {
@@ -17,13 +16,9 @@ class Welcome extends Component {
       top: this.props.scrollToElement.current.offsetTop,
       behavior: "smooth"
     });
-     
-  };  
+  };
 
   render() {
-
-
-    
     return (
       <section className="welcome" ref="parallax">
         <p className="welcome-text">Welcome to Ghvinieri</p>
@@ -34,7 +29,7 @@ class Welcome extends Component {
         </p>
 
         <button className="button" onClick={this.scrollToRef}>
-         <p>read more</p>
+          <p>read more</p>
         </button>
       </section>
     );

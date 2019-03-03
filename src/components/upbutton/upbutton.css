@@ -1,28 +1,28 @@
-.upbutton{
-    width:  20px;
-    height: 20px;
-   background-color: #C02323;
-  padding:2rem;
-   border-radius: 3px;
-   position: fixed;
-   z-index: 100;
-   right: 2rem;
- bottom: 6rem;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: all ease-in-out .3s;
-cursor: pointer;
+.upbutton {
+  width: 20px;
+  height: 20px;
+  background-color: #c02323;
+  padding: 2rem;
+  border-radius: 3px;
+  position: fixed;
+  z-index: 100;
+  right: 2rem;
+  bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
- 
-.upbutton:hover{
-   background-color: rgb(230, 24, 24);
+@media only screen and (max-height: 850px) {
+  .upbutton {
+  }
 }
-.upbutton img{
-   width:  20px;
-   height: 20px;
-   transition: all ease-in-out .3s;
+.upbutton:hover {
+  background-color: rgb(230, 24, 24);
 }
- 
-
-
+.upbutton img {
+  width: 20px;
+  height: 20px;
+  transition: all ease-in-out 0.3s;
+}

@@ -12,8 +12,8 @@
 
 @media only screen and (max-height: 850px) {
   .welcome {
-    height: 120vh;
-    padding: 20rem 0 20rem 0;
+    height: 100vh;
+    padding: 15rem 2rem 15rem 2rem;
   }
 }
 
@@ -24,7 +24,12 @@
   text-align: left;
   padding-left: 5rem;
 }
-
+@media only screen and (max-height: 850px) {
+  .welcome-text {
+    padding: 0;
+    text-align: justify;
+  }
+}
 .welcome h1 {
   color: white;
   font-family: "Marcellus", serif;
@@ -34,7 +39,14 @@
   font-size: 7.5rem;
   font-weight: lighter;
 }
+@media only screen and (max-height: 850px) {
+  .welcome h1 {
+    padding: 0;
 
+    font-size: 5.5rem;
+    margin: 2rem 0;
+  }
+}
 .welcome-paragraph {
   font-family: "Marcellus", serif;
   color: white;
@@ -44,7 +56,13 @@
   text-align: left;
   padding-left: 5rem;
 }
-
+@media only screen and (max-height: 850px) {
+  .welcome-paragraph {
+    width: 100%;
+    padding: 0;
+    text-align: justify;
+  }
+}
 .button {
   text-decoration: none;
   background: transparent;
@@ -64,7 +82,11 @@
   outline: none;
   transition: all ease-in-out 0.2s;
 }
-
+@media only screen and (max-height: 850px) {
+  .button {
+    left: 2rem;
+  }
+}
 .button:active {
   color: rgb(46, 21, 21);
 }

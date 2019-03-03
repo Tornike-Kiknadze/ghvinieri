@@ -9,7 +9,8 @@
 }
 @media only screen and (max-height: 850px) {
   .news {
-    height: 130vh;
+    height: auto;
+    background: #723d37;
   }
 }
 
@@ -18,6 +19,13 @@
 
   height: 100%;
   justify-content: space-around;
+}
+
+@media only screen and (max-height: 850px) {
+  .event-wrapper {
+    height: auto;
+    background: #723d37;
+  }
 }
 .event-wrapper:nth-last-child() {
   display: none;

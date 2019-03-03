@@ -1,41 +1,44 @@
-.nav{
-    height: 8vh;
-    width: 100%;
-    background: #fff; 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    transition: all linear .3s;
+.nav {
+  height: 8vh;
+  width: 100%;
+  background: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  transition: all linear 0.3s;
+}
+@media only screen and (max-width: 500px) {
+  .nav {
+    display: none;
+  }
 }
 
-.nav ul{
-    font-family: 'Marcellus', serif;
-    list-style: none;
- font-size: 1.4rem;
- display:flex;
- 
- text-transform: uppercase;
-}
-.nav ul li{
- margin: 4rem;
- cursor: pointer;
- transition: all ease-in-out .2s;
-}
-.nav ul li a{
-text-decoration: none;
-color:black;
-}
-.nav ul li:hover a{
- cursor: pointer;
- color: #C02323;
- transform: translateY(-1px);
-}
-.nav ul li:hover{
- margin: 4rem;
- cursor: pointer;
- color: #C02323;
- transform: translateY(-1px);
-}
+.nav ul {
+  font-family: "Marcellus", serif;
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
 
- 
+  text-transform: uppercase;
+}
+.nav ul li {
+  margin: 4rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav ul li:hover a {
+  cursor: pointer;
+  color: #c02323;
+  transform: translateY(-1px);
+}
+.nav ul li:hover {
+  margin: 4rem;
+  cursor: pointer;
+  color: #c02323;
+  transform: translateY(-1px);
+}

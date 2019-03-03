@@ -13,12 +13,20 @@
   display: flex;
   padding: 2rem;
 }
-
+@media only screen and (max-height: 850px) {
+  .special-content {
+    flex-direction: column;
+  }
+}
 .special-left {
   padding: 3rem;
   width: 50%;
 }
-
+@media only screen and (max-height: 850px) {
+  .special-left img {
+    width: 20rem;
+  }
+}
 .special h2 {
   margin-bottom: 1.5rem;
   font-family: "Marcellus", serif;
@@ -44,7 +52,11 @@
   line-height: 3rem;
   text-align: justify;
 }
-
+@media only screen and (max-height: 850px) {
+  .special-paragraph {
+    width: auto;
+  }
+}
 .special-right {
   text-align: left;
   height: 80%;
