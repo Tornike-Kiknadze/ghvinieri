@@ -49,7 +49,7 @@ class NewsPage extends Component {
             styleHeader="black"
             styleTitle="black"
           />
-          <br /> <br />
+          <br />
           <p>{currentItem.text}</p>
           <div className="other-news">
             {news

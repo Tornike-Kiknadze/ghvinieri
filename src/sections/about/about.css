@@ -14,7 +14,7 @@
 @media only screen and (max-width: 650px) {
   .about {
     height: auto;
-    padding-bottom: 5rem;
+    padding: 8rem 2rem 5rem 2rem;
     flex-direction: column;
   }
 }
@@ -24,7 +24,8 @@
 }
 @media only screen and (max-width: 650px) {
   .about-left img {
-    width: 300px;
+    width: 320px;
+    margin-bottom: -5rem;
   }
 }
 .about-right {
@@ -78,15 +79,22 @@
   font-size: 1.6rem;
   width: 40ch;
   line-height: 3rem;
-
+  text-align: justify;
   padding-left: 5rem;
 }
+
 @media only screen and (max-width: 650px) {
   .about-paragraph {
     width: 100%;
     padding: 0;
-    text-align: justify;
     margin-top: 3rem;
+  }
+  .info {
+    text-align: center;
+    font-family: "Marcellus", serif;
+    font-size: 1.6rem;
+    margin-top: -1.5rem;
+    line-height: 3rem;
   }
 }
 .gray {

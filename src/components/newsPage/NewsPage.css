@@ -9,11 +9,16 @@
 .newspage-content {
   width: 100%;
   height: 100%;
-  padding: 3.5rem;
+  padding: 1rem 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+}
+@media only screen and (max-width: 550px) {
+  .newspage-content {
+    padding: 0 2rem;
+  }
 }
 .newspage-content h2 {
   margin: 2rem;
@@ -21,8 +26,11 @@
 .newspage-content p {
   text-align: justify;
   font-size: 2rem;
+  line-height: 3.5rem;
 }
-.newspage-paragraph{  font-size: 2rem;}
+.newspage-paragraph {
+  font-size: 2rem;
+}
 .newspage-header {
   width: 100%;
   height: 10vh;
@@ -32,7 +40,6 @@
 
   justify-content: space-around;
 }
- 
 
 .newspage-header-links h3 {
   font-family: "Marcellus", serif;
@@ -42,43 +49,47 @@
 .newspage-header-links {
   display: flex;
   height: 100%;
+
   align-items: center;
   justify-content: space-between;
 }
 
-
-.other-news{
+.other-news {
   width: 100%;
-  margin-top: 3rem;
-  height:auto;
- 
-  
-  bottom: 0;
- 
+  margin-top: 8rem;
+  height: auto;
 }
-.other-news-wrapper{
-  width:100%;
-  height: 300px;
-  margin: 2rem 0;
-  padding: 3rem 1rem;
- display: flex;
-align-items: center;
- 
- 
+@media only screen and (max-width: 550px) {
+  .other-news {
+    margin-top: 5rem;
+  }
+}
+.other-news-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .news-wrapper {
   width: 20rem;
-  height:20rem;
-  box-shadow: 0 .1rem .1rem rgba(72, 98, 85, 0.6);
+  height: 20rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(72, 98, 85, 0.6);
   background-color: #fff;
   display: flex;
-  margin: 0 .5rem;
+  margin: 1rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
- 
 }
+
+@media only screen and (max-width: 550px) {
+  .news-wrapper {
+    width: 25rem;
+    height: 15rem;
+  }
+}
+
 .news-wrapper span {
   font-size: 4rem;
   font-family: "Marcellus", serif;
@@ -89,10 +100,10 @@ align-items: center;
   font-family: "Marcellus", serif;
 }
 
-.other-news-paragraph{
+.other-news-paragraph {
   font-size: 1.5rem;
   width: 70%;
- 
+
   font-family: "Marcellus", serif;
-  margin-left: 4rem;   
+  margin-left: 4rem;
 }

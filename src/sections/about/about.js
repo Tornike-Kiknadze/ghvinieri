@@ -20,11 +20,11 @@ class About extends Component {
             visual mockups.
           </p>
           <p className="gray">Address:</p>
-          <p className="about-paragraph">Tbilisi, Georgia</p>
+          <p className=" about-paragraph info">Tbilisi, Georgia</p>
           <p className="gray">Telephone:</p>
-          <p className="about-paragraph">+995 599 11 11 11</p>
+          <p className=" about-paragraph info">+995 599 11 11 11</p>
           <p className="gray">We're Open</p>
-          <p className="about-paragraph">Mon-Sun: 9.00 - 20.00</p>
+          <p className=" about-paragraph info">Mon-Sun: 9.00 - 20.00</p>
         </div>
       </section>
     );
