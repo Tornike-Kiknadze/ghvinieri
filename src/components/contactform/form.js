@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./form.css";
- 
 
 class Form extends Component {
-/*   constructor() {
+  /*   constructor() {
     super();
 
     this.state = {
@@ -45,18 +44,13 @@ class Form extends Component {
   render() {
     return (
       <div className="contactform">
-       
-     
         <div className="form-wrapper">
           {" "}
-      
           <form
             method="POST"
             className="contact__form"
             onSubmit={this.handleSubmit}
           >
-         
-       
             <div className="input">
               <div className="contact__form__firstcolumn">
                 <input
@@ -69,21 +63,22 @@ class Form extends Component {
                 <input
                   type="text"
                   className="contact__form__text2"
-                  placeholder="surname"
-                  name="surname"
+                  placeholder="email"
+                  name="email"
                   onChange={this.handleChange}
                 />
               </div>
-           
-            </div>   
-             <textarea
+            </div>
+            <textarea
               name="message"
               className="contact__form__textarea"
               placeholder="Text..."
               rows="10"
               onChange={this.handleChange}
             />{" "}
-             <button className="form-button"><span>SEND</span></button>
+            <button className="form-button">
+              <span>SEND</span>
+            </button>
           </form>
         </div>
       </div>

@@ -11,10 +11,7 @@ import HomeButton from "../homebutton/homebutton";
 import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
-
   render() {
-
-
     return (
       <React.Fragment>
         <div className="contact">
@@ -57,7 +54,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="contact-us">
-            <div className="image-container">a</div>
+            <div className="image-container"> </div>
             <Header header="Contact Us" title="Get in touch" />
             <Form />
           </div>

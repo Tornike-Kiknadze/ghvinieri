@@ -13,7 +13,12 @@
 @media only screen and (max-height: 850px) {
   .welcome {
     height: 100vh;
-    padding: 15rem 2rem 15rem 2rem;
+    padding: 25rem 4rem 25rem 4rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .welcome {
+    padding: 10rem 2rem 10rem 2rem;
   }
 }
 
@@ -27,7 +32,6 @@
 @media only screen and (max-height: 850px) {
   .welcome-text {
     padding: 0;
-    text-align: justify;
   }
 }
 .welcome h1 {
@@ -47,6 +51,13 @@
     margin: 2rem 0;
   }
 }
+@media only screen and (max-width: 550px) {
+  .welcome h1 {
+    padding: 0;
+    font-weight: bolder;
+    margin: 2rem 0;
+  }
+}
 .welcome-paragraph {
   font-family: "Marcellus", serif;
   color: white;
@@ -58,9 +69,12 @@
 }
 @media only screen and (max-height: 850px) {
   .welcome-paragraph {
-    width: 100%;
     padding: 0;
-    text-align: justify;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .welcome-paragraph {
+    width: 100%;
   }
 }
 .button {
@@ -84,7 +98,13 @@
 }
 @media only screen and (max-height: 850px) {
   .button {
+    left: 4rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .button {
     left: 2rem;
+    margin-top: 3rem;
   }
 }
 .button:active {
