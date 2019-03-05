@@ -1,7 +1,6 @@
 import React from "react";
 import Burger from "../../../assets/svg/burger";
 import "./icon.css";
-import { isContext } from "vm";
 
 class BurgerIcon extends React.Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class BurgerIcon extends React.Component {
 
     if (isMobile) {
       return (
-        <div className="icon" onClick={this.props.handleClick}>
+        <div className="icon" onClick={this.props.onklik}>
           <Burger width={35} height={35} fill="#C02323" />
         </div>
       );

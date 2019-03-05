@@ -24,14 +24,10 @@ class App extends Component {
       isOpen: false
     };
   }
-  handleClick = () => {
+
+  handleOpenState = () => {
     const isOpen = this.state.isOpen;
     this.setState({ isOpen: !isOpen });
-  };
-  handleOpen = () => {
-    const isOpen = this.state.isOpen;
-    this.setState({ isOpen: !isOpen });
-    console.log(this.state.isOpen);
   };
 
   render() {
@@ -39,7 +35,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <BurgerIcon handleClick={this.handleOpen} />
+        <BurgerIcon onklik={this.handleOpenState} />
         <BurgerMenu
           isOpen={this.state.isOpen}
           products={products}
@@ -47,7 +43,7 @@ class App extends Component {
           offers={special}
           news={news}
           isOpen={this.state.isOpen}
-          onclick={this.handleClick}
+          onklik={this.handleOpenState}
         />
         <Upbutton
           products={products}

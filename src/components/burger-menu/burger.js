@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import Close from "../../assets/svg/close";
 
 class BurgerMenu extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       width: window.innerWidth,
       openClass: "transform"
@@ -26,26 +26,23 @@ class BurgerMenu extends React.Component {
     this.setState({ width: window.innerWidth });
   };
 
-  showSettings(event) {
-    event.preventDefault();
-  }
-
-  componentDidUpdate(prev) {
-    if (prev !== this.props.isOpen) {
-      this.menu.classList.toggle("transform");
-    }
-  }
-
   handleClick = e => {
+    this.props.onklik();
     let section = e.target.innerHTML;
     let scrollto = this.props[section].current.offsetTop;
     window.scrollTo({
       top: scrollto,
       behavior: "smooth"
     });
-    this.props.onclick();
-    console.log("klikkeeeed");
   };
+
+  componentDidUpdate() {
+    if (this.props.isOpen) {
+      this.menu.classList.add("transform");
+    } else {
+      this.menu.classList.remove("transform");
+    }
+  }
 
   render() {
     const { width } = this.state;
@@ -59,7 +56,7 @@ class BurgerMenu extends React.Component {
             width={25}
             height={25}
             fill="#c02323"
-            onClick={this.props.onclick}
+            onClick={this.props.onklik}
           />
           <ul>
             <li onClick={e => this.handleClick(e)}>about</li>

@@ -12,6 +12,7 @@ import Upbutton from "../upbutton/upbutton";
 
 class Contact extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <React.Fragment>
         <div className="contact">
