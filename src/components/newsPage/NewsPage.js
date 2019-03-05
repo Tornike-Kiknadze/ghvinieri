@@ -15,7 +15,6 @@ class NewsPage extends Component {
   }
 
   componentWillMount() {
-    window.scrollTo(0, 0);
     const id = this.props.match.params.id;
     const currentItem = news.find(item => item.id === id);
     this.setState({ currentItem });
