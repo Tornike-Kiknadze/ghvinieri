@@ -7,8 +7,7 @@ class BurgerMenu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: window.innerWidth,
-      openClass: "transform"
+      width: window.innerWidth
     };
   }
 
@@ -34,13 +33,18 @@ class BurgerMenu extends React.Component {
       top: scrollto,
       behavior: "smooth"
     });
+    console.log(this.menu);
   };
 
   componentDidUpdate() {
-    if (this.props.isOpen) {
-      this.menu.classList.add("transform");
-    } else {
-      this.menu.classList.remove("transform");
+    const { width } = this.state;
+    const isMobile = width <= 500;
+    if (isMobile) {
+      if (this.props.isOpen) {
+        this.menu.classList.add("transform");
+      } else {
+        this.menu.classList.remove("transform");
+      }
     }
   }
 
