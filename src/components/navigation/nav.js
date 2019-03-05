@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 
 class Nav extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       width: window.innerWidth
     };
@@ -63,9 +63,7 @@ class Nav extends Component {
       return (
         <div className="nav" ref="nav">
           <ul>
-            <li onClick={e => this.handleClick(e)}>
-              <Link to="/">about</Link>
-            </li>
+            <li onClick={e => this.handleClick(e)}>about</li>
             <li onClick={e => this.handleClick(e)}>products</li>
             <li onClick={e => this.handleClick(e)}>offers</li>
             <li onClick={e => this.handleClick(e)}>news</li>

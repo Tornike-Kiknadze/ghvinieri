@@ -1,0 +1,61 @@
+.menu {
+  background-color: #fff;
+  position: fixed;
+  height: 110%;
+  z-index: 1000;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-out 0.4s;
+  transform: translateX(-500px);
+  border-right: 1px solid #c02323;
+}
+
+.menu__closebutton {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.transform {
+  transform: translateX(0);
+}
+
+.menu ul {
+  list-style: none;
+  text-decoration: none;
+  line-height: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 5rem;
+  text-decoration: none;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+}
+.menu ul li {
+  cursor: pointer;
+  padding: 2rem;
+  text-decoration: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  right: -100px;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+.burger ul {
+  list-style: none;
+  text-decoration: none;
+  line-height: 1rem;
+}

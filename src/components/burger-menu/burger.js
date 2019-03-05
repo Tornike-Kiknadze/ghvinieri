@@ -1,13 +1,14 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import "./burger.css";
 import { Link } from "react-router-dom";
+import Close from "../../assets/svg/close";
 
 class BurgerMenu extends React.Component {
   constructor() {
     super();
     this.state = {
       width: window.innerWidth,
-      isOpen: false
+      openClass: "transform"
     };
   }
 
@@ -29,6 +30,12 @@ class BurgerMenu extends React.Component {
     event.preventDefault();
   }
 
+  componentDidUpdate(prev) {
+    if (prev !== this.props.isOpen) {
+      this.menu.classList.toggle("transform");
+    }
+  }
+
   handleClick = e => {
     let section = e.target.innerHTML;
     let scrollto = this.props[section].current.offsetTop;
@@ -36,71 +43,26 @@ class BurgerMenu extends React.Component {
       top: scrollto,
       behavior: "smooth"
     });
+    this.props.onclick();
+    console.log("klikkeeeed");
   };
 
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
-    var styles = {
-      bmBurgerButton: {
-        position: "fixed",
-        width: "36px",
-        height: "30px",
-        left: "20px",
-        top: "20px"
-      },
-      bmBurgerBars: {
-        background: "#fff"
-      },
-      bmBurgerBarsHover: {
-        background: "#a90000"
-      },
-      bmCrossButton: {
-        height: "24px",
-        width: "24px"
-      },
-      bmCross: {
-        background: "#bdc3c7"
-      },
-      bmMenuWrap: {
-        position: "fixed",
-        height: "100%"
-      },
-      bmMenu: {
-        background: "#232526", //slide background
-        overflow: "hidden",
-        fontSize: "1.15em",
-        outline: "none"
-      },
-      bmMorphShape: {
-        fill: "#373a47"
-      },
-      bmItemList: {
-        display: "flex",
-        flexDirection: "column",
-
-        justifyContent: "center"
-      },
-      bmItem: {
-        display: "inline-block",
-        width: "100%",
-        marginTop: "20px",
-        textDecoration: "none",
-        textTransform: "uppercase",
-        color: "white"
-      },
-      bmOverlay: {
-        background: "rgba(0, 0, 0, 0.3)"
-      }
-    };
 
     if (isMobile) {
       return (
-        <Menu isOpen={this.state.isOpen} styles={styles}>
+        <div className="menu" ref={e => (this.menu = e)}>
+          <Close
+            className="menu__closebutton"
+            width={25}
+            height={25}
+            fill="#c02323"
+            onClick={this.props.onclick}
+          />
           <ul>
-            <li onClick={e => this.handleClick(e)}>
-              <Link to="/">about</Link>
-            </li>
+            <li onClick={e => this.handleClick(e)}>about</li>
             <li onClick={e => this.handleClick(e)}>products</li>
             <li onClick={e => this.handleClick(e)}>offers</li>
             <li onClick={e => this.handleClick(e)}>news</li>
@@ -109,7 +71,7 @@ class BurgerMenu extends React.Component {
               <Link to="/contact">contact</Link>
             </li>
           </ul>
-        </Menu>
+        </div>
       );
     } else {
       return null;
