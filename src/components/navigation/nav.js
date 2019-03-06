@@ -56,7 +56,7 @@ class Nav extends Component {
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
-
+    const { handleLanguage, language } = this.props;
     if (isMobile) {
       return null;
     } else {
@@ -68,10 +68,10 @@ class Nav extends Component {
             <li onClick={e => this.handleClick(e)}>offers</li>
             <li onClick={e => this.handleClick(e)}>news</li>
             <li>
-              {" "}
               <Link to="/contact">contact</Link>
             </li>
           </ul>
+          <div onClick={handleLanguage}>{language}</div>
         </div>
       );
     }

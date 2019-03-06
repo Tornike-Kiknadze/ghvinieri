@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     const { about, products, special, news } = this.state;
-
+    const { language, handleLanguage } = this.props;
     return (
       <div className="App">
         <BurgerIcon onklik={this.handleOpenState} />
@@ -51,7 +51,14 @@ class App extends Component {
           offers={special}
           news={news}
         />
-        <Nav products={products} about={about} offers={special} news={news} />
+        <Nav
+          products={products}
+          about={about}
+          offers={special}
+          news={news}
+          language={language}
+          handleLanguage={handleLanguage}
+        />
         <Welcome scrollToElement={about} />
         <About referance={about} />
         <Products reference={products} />

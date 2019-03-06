@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "is-windows": "^1.0.2",
     "react": "^16.8.2",
     "react-burger-menu": "^2.6.5",
     "react-dom": "^16.8.2",
+    "react-intl": "^2.8.0",
     "react-lazy-hero": "^2.0.0",
     "react-parallax": "^2.1.0",
     "react-router-dom": "^4.3.1",
