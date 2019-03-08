@@ -23,7 +23,7 @@ class News extends Component {
         <div className="event-wrapper">
           <SimpleSlider>
             {news.map(item => (
-              <div className="slider-wrapper">
+              <div className="event-wrapper">
                 <div key={item.id} className="event">
                   <div className="date-wrapper">
                     <span> {item.date}</span> <p>{item.month}</p>

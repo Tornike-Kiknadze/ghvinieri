@@ -15,25 +15,18 @@
 @media only screen and (max-width: 550px) {
   .news {
     height: auto;
-    background: #3c1518;
+    background: url("./assets/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
-.slider-wrapper {
-  width: 80%;
-  outline: none;
-}
+
 .event-wrapper {
-  width: auto;
-  height: 100%;
   outline: none;
-  justify-content: space-around;
 }
 
 @media only screen and (max-width: 550px) {
   .event-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 5rem;
   }
 }
@@ -49,14 +42,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 7rem;
   border-radius: 2px;
   float: left;
-  margin: 2rem;
 }
 @media only screen and (max-width: 550px) {
   .event {
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgba(255, 255, 255, 0.774);
+
+    width: 100%;
   }
 }
 .event:hover {
@@ -65,7 +59,7 @@
 
 @media only screen and (max-width: 550px) {
   .event:hover {
-    background: rgba(255, 255, 255, 0.856);
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 .event a {
