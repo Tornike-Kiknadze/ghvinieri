@@ -1,7 +1,7 @@
 .welcome {
   height: 100vh;
   width: 100%;
-
+  font-family: "BPG Mikheil Stefane", sans-serif;
   background: url("./assets/img/back.jpg");
   background-size: cover;
   background-position: center;
@@ -22,6 +22,21 @@
   }
 }
 
+@font-face {
+  font-family: "BPG Mikheil Stefane", sans-serif;
+  src: url("../../../src/font/css/bpg-irubaqidze.min.css");
+}
+
+.ka {
+  font-size: 3.5rem;
+  font-family: "BPG Irubaqidze", sans-serif;
+  margin: auto;
+}
+.ka--big {
+  font-size: 5.5rem;
+  font-family: "BPG Irubaqidze", sans-serif;
+  margin: 3rem 1rem;
+}
 .welcome-text {
   font-family: "Rouge Script", cursive;
   color: white;

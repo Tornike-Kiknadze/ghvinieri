@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./App.css";
 import Welcome from "./sections/welcome/welcome";
 import About from "./sections/about/about";
@@ -59,7 +58,7 @@ class App extends Component {
           language={language}
           handleLanguage={handleLanguage}
         />
-        <Welcome scrollToElement={about} />
+        <Welcome scrollToElement={about} language={language} />
         <About referance={about} />
         <Products reference={products} />
         <Special reference={special} />

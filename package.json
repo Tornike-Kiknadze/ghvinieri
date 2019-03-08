@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bpg-mikheil-stefane": "^1.0.0",
     "is-windows": "^1.0.2",
     "react": "^16.8.2",
     "react-burger-menu": "^2.6.5",
