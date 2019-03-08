@@ -3,6 +3,8 @@ import "./news.css";
 import Header from "../../components/sectionheader/header";
 import { Link } from "react-router-dom";
 import news from "../../data/news";
+
+import SimpleSlider from "../../components/slider/slider";
 class News extends Component {
   state = {
     news
@@ -19,15 +21,19 @@ class News extends Component {
           styleTitle="white"
         />
         <div className="event-wrapper">
-          {news.map(item => (
-            <div key={item.id} className="event">
-              <div className="date-wrapper">
-                <span> {item.date}</span> <p>{item.month}</p>
+          <SimpleSlider>
+            {news.map(item => (
+              <div className="slider-wrapper">
+                <div key={item.id} className="event">
+                  <div className="date-wrapper">
+                    <span> {item.date}</span> <p>{item.month}</p>
+                  </div>
+                  <h2>{item.hour}</h2>
+                  <Link to={`newspage/${item.id}`}>{item.name}</Link>
+                </div>
               </div>
-              <h2>{item.hour}</h2>
-              <Link to={`newspage/${item.id}`}>{item.name}</Link>
-            </div>
-          ))}
+            ))}
+          </SimpleSlider>
         </div>
       </section>
     );
