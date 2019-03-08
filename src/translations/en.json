@@ -1,4 +1,8 @@
 {
   "welcome": "Welcome to Gvinieri",
-  "BestWineStore": "Best Wine Store."
+  "BestWineStore": "Best Wine Store.",
+  "about": "about",
+  "products": "products",
+  "offers": "offers",
+  "news": "news"
 }

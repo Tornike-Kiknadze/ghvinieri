@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     const { about, products, special, news } = this.state;
-    const { language, handleLanguage, langChange } = this.props;
+    const { language, langChange } = this.props;
     return (
       <div className="App">
         <Option lang={langChange} language={language} />
@@ -57,7 +57,7 @@ class App extends Component {
           about={about}
           offers={special}
           news={news}
-
+          language={language}
         />
         <Welcome scrollToElement={about} language={language} />
         <About referance={about} />

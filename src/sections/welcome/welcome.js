@@ -15,7 +15,7 @@ class Welcome extends Component {
       this.setState({ lang: ka });
     }
     const parallax = this.refs.parallax;
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       let offset = window.pageYOffset;
       parallax.style.backgroundPositionY = offset * 0.55 + "px";
     });

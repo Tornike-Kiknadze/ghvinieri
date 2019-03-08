@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { FormattedMessage } from "react-intl";
 import "./nav.css";
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: window.innerWidth
+      width: window.innerWidth,
+      lang: ''
     };
   }
 
@@ -30,6 +31,12 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+
+    const { language } = this.props;
+    const ka = "ka";
+    if (language === "ka") {
+      this.setState({ lang: ka });
+    }
     if (this.state.width >= 500) {
       const nav = this.refs.nav;
       window.addEventListener("scroll", function () {
@@ -46,16 +53,28 @@ class Nav extends Component {
 
   handleClick = e => {
     let section = e.target.innerHTML;
+    switch (section) {
+      case 'ჩვენ შესახებ':
+        section = "about";
+        break;
+      case 'პროდუქცია':
+        section = "products";
+        break;
+
+    }
+
     let scrollto = this.props[section].current.offsetTop;
     window.scrollTo({
       top: scrollto,
       behavior: "smooth"
     });
+
   };
 
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
+    let lang = this.state;
 
     if (isMobile) {
       return null;
@@ -63,12 +82,23 @@ class Nav extends Component {
       return (
         <div className="nav" ref="nav">
           <ul>
-            <li onClick={e => this.handleClick(e)}>about</li>
-            <li onClick={e => this.handleClick(e)}>products</li>
-            <li onClick={e => this.handleClick(e)}>offers</li>
-            <li onClick={e => this.handleClick(e)}>news</li>
+            <li onClick={e => this.handleClick(e)}>
+              <FormattedMessage id="about">
+                {txt => <div className={`${lang}--big`}>{txt}</div>}
+              </FormattedMessage></li>
+            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="products">
+              {txt => <div className={`${lang}--big`}>{txt}</div>}
+            </FormattedMessage></li>
+            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="offers">
+              {txt => <div className={`${lang}--big`}>{txt}</div>}
+            </FormattedMessage></li>
+            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="news">
+              {txt => <div className={`${lang}--big`}>{txt}</div>}
+            </FormattedMessage></li>
             <li>
-              <Link to="/contact">contact</Link>
+              <Link to="/contact"><FormattedMessage id="contact">
+                {txt => <div className={`${lang}--big`}>{txt}</div>}
+              </FormattedMessage></Link>
             </li>
           </ul>
 
