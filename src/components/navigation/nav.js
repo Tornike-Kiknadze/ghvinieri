@@ -56,7 +56,7 @@ class Nav extends Component {
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
-    const { handleLanguage, language } = this.props;
+
     if (isMobile) {
       return null;
     } else {

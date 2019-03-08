@@ -9,17 +9,17 @@ class Option extends Component {
 
     componentDidMount() {
         this.setState({ lang: this.props.language })
-        /* 
-                const select = this.select;
-                window.addEventListener("scroll", function () {
-                    let offset = window.pageYOffset;
-        
-                    if (offset >= 135) {
-                        select.style.transform = "translateY(80px)";
-                    } else {
-                        select.style.transform = "translateY(0px)";
-                    }
-                }); */
+
+        const select = this.select;
+        window.addEventListener("scroll", function () {
+            let offset = window.pageYOffset;
+
+            if (offset >= 115) {
+                select.style.opacity = "0";
+            } else {
+                select.style.opacity = "1";
+            }
+        });
 
     }
 
