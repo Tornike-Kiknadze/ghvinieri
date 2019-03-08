@@ -12,6 +12,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
+      centerPadding: 30,
       responsive: [
         {
           breakpoint: 1024,

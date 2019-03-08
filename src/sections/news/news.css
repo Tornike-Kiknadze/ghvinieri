@@ -37,24 +37,24 @@
 .event {
   width: 300px;
   height: 450px;
-  background-color: rgba(255, 255, 255, 0.021);
+  background-color: rgba(255, 255, 255, 0.21);
   transition: all ease-in-out 0.4s;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 7rem;
+  margin-left: 5rem;
   border-radius: 2px;
   float: left;
 }
 @media only screen and (max-width: 550px) {
   .event {
-    background-color: rgba(255, 255, 255, 0.774);
-
+    margin: 0;
     width: 100%;
   }
 }
 .event:hover {
-  background-color: #0f0807;
+  background-color: #d4cccc77;
 }
 
 @media only screen and (max-width: 550px) {
@@ -71,7 +71,7 @@
   transition: all ease-in-out 0.2s;
 }
 .event:hover a {
-  color: #cb3723;
+  color: #913529;
 }
 .event h2 {
   color: #fff;
