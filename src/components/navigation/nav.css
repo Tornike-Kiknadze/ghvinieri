@@ -14,6 +14,15 @@
   }
 }
 
+@font-face {
+  font-family: "BPG Mikheil Stefane", sans-serif;
+  src: url("../../../src/font/css/bpg-irubaqidze.min.css");
+}
+.ka-nav {
+  font-size: 2.2rem;
+  font-family: "BPG Irubaqidze", sans-serif;
+  margin: auto;
+}
 .nav ul {
   font-family: "Marcellus", serif;
   list-style: none;

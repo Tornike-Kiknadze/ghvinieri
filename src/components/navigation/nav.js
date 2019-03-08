@@ -30,10 +30,12 @@ class Nav extends Component {
     event.preventDefault();
   }
 
+
+
   componentDidMount() {
 
     const { language } = this.props;
-    const ka = "ka";
+    const ka = "ka-nav";
     if (language === "ka") {
       this.setState({ lang: ka });
     }
@@ -74,7 +76,7 @@ class Nav extends Component {
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
-    let lang = this.state;
+    const lang = this.state.lang
 
     if (isMobile) {
       return null;
@@ -84,20 +86,20 @@ class Nav extends Component {
           <ul>
             <li onClick={e => this.handleClick(e)}>
               <FormattedMessage id="about">
-                {txt => <div className={`${lang}--big`}>{txt}</div>}
+                {txt => <div className={`${lang}`}>{txt}</div>}
               </FormattedMessage></li>
             <li onClick={e => this.handleClick(e)}> <FormattedMessage id="products">
-              {txt => <div className={`${lang}--big`}>{txt}</div>}
+              {txt => <div className={`${lang}`}>{txt}</div>}
             </FormattedMessage></li>
             <li onClick={e => this.handleClick(e)}> <FormattedMessage id="offers">
-              {txt => <div className={`${lang}--big`}>{txt}</div>}
+              {txt => <div className={`${lang}`}>{txt}</div>}
             </FormattedMessage></li>
             <li onClick={e => this.handleClick(e)}> <FormattedMessage id="news">
-              {txt => <div className={`${lang}--big`}>{txt}</div>}
+              {txt => <div className={`${lang}`}>{txt}</div>}
             </FormattedMessage></li>
             <li>
               <Link to="/contact"><FormattedMessage id="contact">
-                {txt => <div className={`${lang}--big`}>{txt}</div>}
+                {txt => <div className={`${lang}`}>{txt}</div>}
               </FormattedMessage></Link>
             </li>
           </ul>
