@@ -27,17 +27,25 @@ class Routing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      language: "en"
+      language: "ka"
     };
   }
 
   handleLanguage = () => {
     const { language } = this.state;
-    if (language === "en") this.setState({ language: "ka" });
+    if (language === "ka") this.setState({ language: "en" });
     else {
       this.setState({ language: "en" });
     }
   };
+  handleLangChange = (e) => {
+    const lang = e.target.value;
+    this.setState({ language: lang });
+
+
+  };
+
+
   render() {
     const { language } = this.state;
     return (
@@ -48,7 +56,7 @@ class Routing extends Component {
               exact
               path="/"
               component={() => (
-                <App language={language} handleLanguage={this.handleLanguage} />
+                <App langChange={this.handleLangChange} language={language} handleLanguage={this.handleLanguage} />
               )}
             />
             <Route path="/contact" component={Contact} />

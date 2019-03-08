@@ -10,6 +10,7 @@ import Upbutton from "./components/upbutton/upbutton";
 import Footer from "./components/footer/footer";
 import BurgerMenu from "./components/burger-menu/burger";
 import BurgerIcon from "./components/burger-menu/burgericon/icon";
+import Option from "./components/option/option";
 
 class App extends Component {
   constructor(props) {
@@ -31,9 +32,10 @@ class App extends Component {
 
   render() {
     const { about, products, special, news } = this.state;
-    const { language, handleLanguage } = this.props;
+    const { language, handleLanguage, langChange } = this.props;
     return (
       <div className="App">
+        <Option lang={langChange} language={language} />
         <BurgerIcon onklik={this.handleOpenState} />
         <BurgerMenu
           isOpen={this.state.isOpen}
@@ -55,8 +57,7 @@ class App extends Component {
           about={about}
           offers={special}
           news={news}
-          language={language}
-          handleLanguage={handleLanguage}
+
         />
         <Welcome scrollToElement={about} language={language} />
         <About referance={about} />

@@ -32,7 +32,7 @@ class Nav extends Component {
   componentDidMount() {
     if (this.state.width >= 500) {
       const nav = this.refs.nav;
-      window.addEventListener("scroll", function() {
+      window.addEventListener("scroll", function () {
         let offset = window.pageYOffset;
 
         if (offset >= 135) {
@@ -71,7 +71,7 @@ class Nav extends Component {
               <Link to="/contact">contact</Link>
             </li>
           </ul>
-          <div onClick={handleLanguage}>{language}</div>
+
         </div>
       );
     }
