@@ -8,7 +8,7 @@ class Nav extends Component {
     super(props);
     this.state = {
       width: window.innerWidth,
-      lang: ''
+      lang: ""
     };
   }
 
@@ -30,10 +30,7 @@ class Nav extends Component {
     event.preventDefault();
   }
 
-
-
   componentDidMount() {
-
     const { language } = this.props;
     const ka = "ka-nav";
     if (language === "ka") {
@@ -41,7 +38,7 @@ class Nav extends Component {
     }
     if (this.state.width >= 500) {
       const nav = this.refs.nav;
-      window.addEventListener("scroll", function () {
+      window.addEventListener("scroll", function() {
         let offset = window.pageYOffset;
 
         if (offset >= 135) {
@@ -54,29 +51,19 @@ class Nav extends Component {
   }
 
   handleClick = e => {
-    let section = e.target.innerHTML;
-    switch (section) {
-      case 'ჩვენ შესახებ':
-        section = "about";
-        break;
-      case 'პროდუქცია':
-        section = "products";
-        break;
-
-    }
+    let section = e.target.id;
 
     let scrollto = this.props[section].current.offsetTop;
     window.scrollTo({
       top: scrollto,
       behavior: "smooth"
     });
-
   };
 
   render() {
     const { width } = this.state;
     const isMobile = width <= 500;
-    const lang = this.state.lang
+    const lang = this.state.lang;
 
     if (isMobile) {
       return null;
@@ -86,24 +73,51 @@ class Nav extends Component {
           <ul>
             <li onClick={e => this.handleClick(e)}>
               <FormattedMessage id="about">
-                {txt => <div className={`${lang}`}>{txt}</div>}
-              </FormattedMessage></li>
-            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="products">
-              {txt => <div className={`${lang}`}>{txt}</div>}
-            </FormattedMessage></li>
-            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="offers">
-              {txt => <div className={`${lang}`}>{txt}</div>}
-            </FormattedMessage></li>
-            <li onClick={e => this.handleClick(e)}> <FormattedMessage id="news">
-              {txt => <div className={`${lang}`}>{txt}</div>}
-            </FormattedMessage></li>
+                {txt => (
+                  <div id="about" className={`${lang}`}>
+                    {txt}
+                  </div>
+                )}
+              </FormattedMessage>
+            </li>
+            <li onClick={e => this.handleClick(e)}>
+              {" "}
+              <FormattedMessage id="products">
+                {txt => (
+                  <div id="products" className={`${lang}`}>
+                    {txt}
+                  </div>
+                )}
+              </FormattedMessage>
+            </li>
+            <li onClick={e => this.handleClick(e)}>
+              {" "}
+              <FormattedMessage id="offers">
+                {txt => (
+                  <div id="offers" className={`${lang}`}>
+                    {txt}
+                  </div>
+                )}
+              </FormattedMessage>
+            </li>
+            <li onClick={e => this.handleClick(e)}>
+              {" "}
+              <FormattedMessage id="news">
+                {txt => (
+                  <div id="news" className={`${lang}`}>
+                    {txt}
+                  </div>
+                )}
+              </FormattedMessage>
+            </li>
             <li>
-              <Link to="/contact"><FormattedMessage id="contact">
-                {txt => <div className={`${lang}`}>{txt}</div>}
-              </FormattedMessage></Link>
+              <Link to="/contact">
+                <FormattedMessage id="contact">
+                  {txt => <div className={`${lang}`}>{txt}</div>}
+                </FormattedMessage>
+              </Link>
             </li>
           </ul>
-
         </div>
       );
     }
