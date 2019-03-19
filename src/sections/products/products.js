@@ -9,7 +9,6 @@ class Products extends Component {
     wines: [
       { id: uuidv1(), name: "red", img: require("./assets/img/bottle.png") },
       { id: uuidv1(), name: "white", img: require("./assets/img/bottle1.png") },
-
       { id: uuidv1(), name: "green", img: require("./assets/img/bottle.png") },
       {
         id: uuidv1(),

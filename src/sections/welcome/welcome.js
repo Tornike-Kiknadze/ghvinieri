@@ -15,7 +15,7 @@ class Welcome extends Component {
       this.setState({ lang: ka });
     }
     const parallax = this.refs.parallax;
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function() {
       let offset = window.pageYOffset;
       parallax.style.backgroundPositionY = offset * 0.55 + "px";
     });
@@ -43,12 +43,11 @@ class Welcome extends Component {
             {txt => <div className={`${lang}--big`}>{txt}</div>}
           </FormattedMessage>
         </h1>
-        <p className="welcome-paragraph">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
-        </p>
+
         <button className="button" onClick={this.scrollToRef}>
-          <p>read more</p>
+          <FormattedMessage id="readmore">
+            {txt => <p className={`${lang}`}>{txt}</p>}
+          </FormattedMessage>
         </button>
       </section>
     );

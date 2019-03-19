@@ -29,9 +29,9 @@ class NewsPage extends Component {
 
   render() {
     window.scrollTo(0, 0);
-    console.log("state", this.state);
     const { news, currentItem } = this.state;
-    console.log("currentItemInComponent", currentItem);
+    console.log(news);
+
     return (
       <div className="newspage">
         <div className="newspage-header">

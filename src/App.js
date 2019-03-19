@@ -11,6 +11,7 @@ import Footer from "./components/footer/footer";
 import BurgerMenu from "./components/burger-menu/burger";
 import BurgerIcon from "./components/burger-menu/burgericon/icon";
 import Option from "./components/option/option";
+import NavHeader from "./components/navheader/navheader";
 
 class App extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class App extends Component {
     const { language, langChange } = this.props;
     return (
       <div className="App">
-        <Option lang={langChange} language={language} />
+        {/*  <Option lang={langChange} language={language} /> */}
         <BurgerIcon onklik={this.handleOpenState} />
         <BurgerMenu
           isOpen={this.state.isOpen}
@@ -52,6 +53,7 @@ class App extends Component {
           offers={special}
           news={news}
         />
+        <NavHeader />
         <Nav
           products={products}
           about={about}

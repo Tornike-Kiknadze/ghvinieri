@@ -22,7 +22,7 @@ const messages = {
   en: messages_en,
   ka: messages_ka
 };
-
+console.log(messages_en);
 class Routing extends Component {
   constructor(props) {
     super(props);
@@ -38,13 +38,10 @@ class Routing extends Component {
       this.setState({ language: "en" });
     }
   };
-  handleLangChange = (e) => {
+  handleLangChange = e => {
     const lang = e.target.value;
     this.setState({ language: lang });
-
-
   };
-
 
   render() {
     const { language } = this.state;
@@ -56,7 +53,11 @@ class Routing extends Component {
               exact
               path="/"
               component={() => (
-                <App langChange={this.handleLangChange} language={language} handleLanguage={this.handleLanguage} />
+                <App
+                  langChange={this.handleLangChange}
+                  language={language}
+                  handleLanguage={this.handleLanguage}
+                />
               )}
             />
             <Route path="/contact" component={Contact} />

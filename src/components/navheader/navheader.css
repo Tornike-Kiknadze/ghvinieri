@@ -1,0 +1,18 @@
+.navHeader {
+  width: 100%;
+  height: 28px;
+  background-color: #c02323d2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.navHeader i {
+  margin: 0;
+}
+.navHeader-number {
+  color: white;
+  margin-left: 1rem;
+}

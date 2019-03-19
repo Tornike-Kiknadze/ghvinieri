@@ -1,11 +1,11 @@
 .nav {
-  height: 8vh;
+  height: 11vh;
   width: 100%;
   background: #fff;
   align-items: center;
   display: flex;
   justify-content: center;
-  position: fixed;
+
   transition: all linear 0.3s;
 }
 @media only screen and (max-width: 500px) {
@@ -50,4 +50,10 @@
   cursor: pointer;
   color: #c02323;
   transform: translateY(-1px);
+}
+
+.nav img {
+  position: absolute;
+  left: 4rem;
+  top: 3.5rem;
 }

@@ -1,26 +1,22 @@
-.footer{
-    height: 40vh;
-    width:100%;
-    overflow: hidden;
-  background: url('../../sections/special/assets/img/footer.jpg');
+.footer {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  background: url("../../sections/special/assets/img/footer.jpg");
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
- 
- 
- 
- 
-.footer-contact svg:hover{
- cursor: pointer;
- fill:#a10215;
+
+.footer-contact svg:hover {
+  cursor: pointer;
+  fill: #a10215;
 }
-.footer-contact svg{
-margin:1rem;
-transition: all ease-in-out .3s;
+.footer-contact svg {
+  margin: 1rem;
+  transition: all ease-in-out 0.3s;
 }
 .footer-contact {
   margin-top: 4rem;
 }
- 

@@ -1,5 +1,5 @@
 .products {
-  height: 105vh;
+  height: 90vh;
   width: 100%;
   padding: 0 2rem;
 }
@@ -113,7 +113,7 @@
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  background-color: rgb(192, 35, 35);
+  background-color: rgb(83, 24, 24);
   z-index: 0;
 }
 

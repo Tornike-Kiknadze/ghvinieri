@@ -3,6 +3,7 @@ import "./news.css";
 import Header from "../../components/sectionheader/header";
 import { Link } from "react-router-dom";
 import news from "../../data/news";
+import { FormattedMessage } from "react-intl";
 
 import SimpleSlider from "../../components/slider/slider";
 class News extends Component {

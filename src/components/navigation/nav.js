@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import "./nav.css";
-
+import wine from "../../assets/svg/wine.png";
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -70,6 +70,7 @@ class Nav extends Component {
     } else {
       return (
         <div className="nav" ref="nav">
+          <img src={wine} width={85} />
           <ul>
             <li onClick={e => this.handleClick(e)}>
               <FormattedMessage id="about">
