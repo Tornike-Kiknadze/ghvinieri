@@ -36,7 +36,6 @@ class App extends Component {
     const { language, langChange } = this.props;
     return (
       <div className="App">
-        {/*  <Option lang={langChange} language={language} /> */}
         <BurgerIcon onklik={this.handleOpenState} />
         <BurgerMenu
           isOpen={this.state.isOpen}
@@ -60,7 +59,9 @@ class App extends Component {
           offers={special}
           news={news}
           language={language}
-        />
+        >
+          <Option lang={langChange} language={language} />
+        </Nav>
         <Welcome scrollToElement={about} language={language} />
         <About referance={about} />
         <Products reference={products} />

@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./products.css";
 import uuidv1 from "uuid/v1";
 import Header from "../../components/sectionheader/header";
+import { FormattedMessage } from "react-intl";
 
 class Products extends Component {
   state = {
     wines: [
       { id: uuidv1(), name: "red", img: require("./assets/img/bottle.png") },
       { id: uuidv1(), name: "white", img: require("./assets/img/bottle1.png") },
+
       { id: uuidv1(), name: "green", img: require("./assets/img/bottle.png") },
       {
         id: uuidv1(),
@@ -28,7 +30,10 @@ class Products extends Component {
             <div key={wine.key} className="products-item">
               <img alt="" src={wine.img} />
 
-              <p className="product-name">{wine.name}</p>
+              <p className="product-name">
+                {" "}
+                <FormattedMessage id={`${wine.name}`} />
+              </p>
             </div>
           ))}
         </div>

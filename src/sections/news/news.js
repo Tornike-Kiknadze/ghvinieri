@@ -27,10 +27,16 @@ class News extends Component {
               <div className="event-wrapper">
                 <div key={item.id} className="event">
                   <div className="date-wrapper">
-                    <span> {item.date}</span> <p>{item.month}</p>
+                    <span> {item.date}</span>
+                    <p>
+                      <FormattedMessage id={`${item.month}`} />
+                    </p>
                   </div>
                   <h2>{item.hour}</h2>
-                  <Link to={`newspage/${item.id}`}>{item.name}</Link>
+                  <Link to={`newspage/${item.id}`}>
+                    {" "}
+                    <FormattedMessage id={`${item.name}`} />
+                  </Link>
                 </div>
               </div>
             ))}

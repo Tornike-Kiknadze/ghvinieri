@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./productpage.css";
 import HomeButton from "../homebutton/homebutton";
-
+import { FormattedMessage } from "react-intl";
 class ProductPage extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +31,9 @@ class ProductPage extends Component {
           {products.map(item => (
             <div key={item.name} className="productpage-content">
               <img src={item.img} />
-              <p>{item.name}</p>
+              <p>
+                <FormattedMessage id={`${item.name}`} />
+              </p>
             </div>
           ))}
         </div>

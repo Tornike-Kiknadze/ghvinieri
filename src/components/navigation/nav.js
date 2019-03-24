@@ -119,6 +119,7 @@ class Nav extends Component {
               </Link>
             </li>
           </ul>
+          {this.props.children}
         </div>
       );
     }

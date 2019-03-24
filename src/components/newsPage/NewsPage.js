@@ -4,7 +4,7 @@ import HomeButton from "../homebutton/homebutton";
 import Header from "../sectionheader/header";
 import { Link } from "react-router-dom";
 import news from "../../data/news";
-
+import { FormattedMessage } from "react-intl";
 class NewsPage extends Component {
   constructor(props) {
     super(props);
@@ -30,8 +30,6 @@ class NewsPage extends Component {
   render() {
     window.scrollTo(0, 0);
     const { news, currentItem } = this.state;
-    console.log(news);
-
     return (
       <div className="newspage">
         <div className="newspage-header">
@@ -67,7 +65,7 @@ class NewsPage extends Component {
                         pathname: `${item.id}`
                       }}
                     >
-                      {item.name}
+                      <FormattedMessage id={`${item.name}`} />
                     </Link>
                   </div>
                 </div>
