@@ -1,11 +1,11 @@
 .nav {
-  height: 11vh;
+  height: 8vh;
   width: 100%;
   background: #fff;
   align-items: center;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
   transition: all linear 0.3s;
 }
 @media only screen and (max-width: 500px) {
@@ -13,14 +13,14 @@
     display: none;
   }
 }
-
 @font-face {
-  font-family: "BPG Mikheil Stefane", sans-serif;
-  src: url("../../../src/font/css/bpg-irubaqidze.min.css");
+  font-family: "BPG Mikheil Stefane";
+  src: url("../../../src/assets/fonts/bpg-irubaqidze-webfont.woff");
 }
+
 .ka-nav {
   font-size: 2.2rem;
-  font-family: "BPG Irubaqidze", sans-serif;
+  font-family: "BPG Mikheil Stefane";
   margin: auto;
 }
 .nav ul {
@@ -50,10 +50,4 @@
   cursor: pointer;
   color: #c02323;
   transform: translateY(-1px);
-}
-
-.nav img {
-  position: absolute;
-  left: 4rem;
-  top: 3.5rem;
 }
